@@ -1,0 +1,10 @@
+.footer {
+    padding: 60px 0;
+    background-color: var(--footer-bcg-color);
+}
+.footer-wrap {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}

@@ -1,0 +1,48 @@
+.portfolio {
+    @extend %section;
+    @extend %container;
+}
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--indent);
+}
+.gallery-thumbs {
+    position: relative;
+    overflow: hidden;
+}
+.gallery-image {
+    display: inline-block;
+    @include transition (box-shadow);
+
+    &:hover, 
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    } 
+}
+.gallery-image:hover .overlay-gallery, 
+.gallery-image:focus .overlay-gallery {
+    transform: translateY(0);
+}   
+.gallery-description {
+    background: var(--background-color);
+    border: 1px solid  #EEEEEE;
+    border-top: none;
+    padding: 20px 24px;
+}
+.gallery-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36 / 18);
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+}
+.gallery-item-text {
+    font-size: var(--font-size-secondary);
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}

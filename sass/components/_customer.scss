@@ -1,0 +1,29 @@
+.customer {
+    @extend %section;
+    @extend %container;
+}
+.customer__list {
+    display: flex;
+    gap: 30px;
+}
+.customer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    color: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    @include transition (color, border-color);
+
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}
+.customer__icon {
+    fill: currentColor;
+}

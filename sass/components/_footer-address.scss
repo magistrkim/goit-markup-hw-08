@@ -1,0 +1,27 @@
+.footer-contacts__wrap {
+    margin-right: 70px;
+}
+.address__list {
+    margin-top: 20px;
+    font-style: normal;
+    font-size: var(--font-size-main);
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+}
+.address__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+.footer-address.link {
+    color: var(--secondary-title-color); 
+    @include transition (color);
+}
+.address__link {
+    color: var(--footer-link-color);
+    @include transition (color);
+
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+

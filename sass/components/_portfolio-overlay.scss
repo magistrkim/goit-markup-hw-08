@@ -1,0 +1,21 @@
+.overlay-gallery {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    @include transition (transform);
+}
+.overlay-gallery-text {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    letter-spacing: 0.03em;
+    color: var(--secondary-title-color);
+}

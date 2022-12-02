@@ -1,0 +1,30 @@
+.header-contacts {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-contacts__link {
+    display: inline-flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include transition (color);
+}
+.contacts__link {
+    color: var(--main-text-color);
+    font-weight: 500;
+    font-size: var(--font-size-main);
+    line-height: 1.14;
+    letter-spacing: 0.02em; 
+
+    &:hover, 
+    &:focus {
+    color: var(--accent-color);
+    }
+}
+
+.contacts__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
