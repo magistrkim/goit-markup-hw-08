@@ -9,21 +9,34 @@
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
+
+    @media screen and (min-width: 1200px) {
+        padding: 200px 0;
+    }
 }
 .hero__title {
-    width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
     color: var(--secondary-title-color); 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+        width: 696px;
+        font-size: 44px;
+        line-height: calc(60 / 44);
+    }
 }
 .hero-button {
     display: inline-block;
-    min-width: 216px;
-    padding: 10px 32px;  
+    min-width: 200px;
+    padding: 10px 32px; 
+    
+    @media screen and (min-width: 1200px) {
+        min-width: 216px;
+    }
 }

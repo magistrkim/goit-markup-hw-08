@@ -1,6 +1,10 @@
 .work {
     @extend %section;
     @extend %container;
+
+    @media screen and (max-width: 1199.98px) {
+        display: none;
+    }
 }
 .work__list {
     display: flex;

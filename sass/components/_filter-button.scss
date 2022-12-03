@@ -1,15 +1,25 @@
 .filter-list {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin-bottom: 50px;
+    @media screen and (max-width: 767.98px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        gap: 8px; 
+        margin-bottom: 50px;
+    }
 }
 .filter-btn {
     padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: var(--font-size-secondary);
-    line-height: 1.62;
+    line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em; 
     background-color: var(--secondary-bcg-color);

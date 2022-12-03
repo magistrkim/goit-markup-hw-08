@@ -35,31 +35,3 @@
         fill: currentColor;
     }
 }
-.footer-social__wrapper {
-    margin-right: auto;
-}
-.footer-social__title {
-    font-weight: 700;
-    font-size: var(--font-size-main);
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--secondary-title-color);
-    margin-bottom: 20px;
-}
-.footer-social__list {
-    display: flex;
-    gap: 10px;
-}
-.footer-social__link {
-    background-color:  rgba(255, 255, 255, 0.1);
-    color: var(--secondary-title-color);
-    @include transition (background-color);
-}
-.footer-social__link:hover, 
-.footer-social__link:focus {
-    background-color: var(--accent-color);
-}
-.footer-social__icon {
-    fill: var(--secondary-title-color);
-}

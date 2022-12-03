@@ -4,13 +4,26 @@
 }
 .customer__list {
     display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
     gap: 30px;
+
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
+}
+.customer__item {
+    flex-basis: calc((100% - 30px)/2);
+    
+    @media screen and (min-width: 768px) {
+       flex-basis: calc((100% - 60px)/3);
+    }
 }
 .customer__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
     color: #AFB1B8;
     border: 1px solid #AFB1B8;

@@ -13,5 +13,10 @@
     color: var(--secondary-title-color);
 }
 .header-logo {
-    margin-right: 93px;
+    margin-right: 92px;
+
+    @media screen and (max-width: 1199.98px) {
+        margin-right: 88px;
+    }
+
 }

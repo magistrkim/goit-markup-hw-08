@@ -1,11 +1,27 @@
+.footer-address-socials-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+        padding-bottom: 60px;
+    } 
+}
+
 .footer-contacts__wrap {
-    margin-right: 70px;
+    @media screen and (max-width: 767.98px) {
+        margin-bottom: 60px;
+        text-align: center;
+    }  
+    
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+    }  
 }
 .address__list {
     margin-top: 20px;
     font-style: normal;
     font-size: var(--font-size-main);
-    line-height: 1.7;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
 }
 .address__item:not(:last-child) {
