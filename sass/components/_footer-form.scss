@@ -9,10 +9,10 @@
 }
 .footer-form__label {
     @media screen and (max-width: 1199.98px) {
-        padding-bottom: 20px;
         display: block; 
         margin: 0 auto;
         max-width: 450px;
+        margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
         display: inline-flex;

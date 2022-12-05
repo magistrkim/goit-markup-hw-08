@@ -65,6 +65,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
+    @media screen and (max-width: 1199.98px) {
+        max-width: 360px;
+    }
+    
     @media screen and (min-width: 1200px) {
         width: 696px;
         font-size: 44px;
