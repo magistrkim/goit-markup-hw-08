@@ -572,6 +572,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero {
+    height: 600px;
     padding: 200px 0;
   }
 }
@@ -1131,13 +1132,8 @@ img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-  background-image: url(../icons/footer-send.svg);
+  background-image: url(../../icons/footer-send.svg);
   background-size: contain;
-}
-@media screen and (max-width: 479.98px) {
-  .footer-form__btn::after {
-    display: none;
-  }
 }
 
 .social__list {

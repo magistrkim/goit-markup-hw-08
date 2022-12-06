@@ -54,11 +54,7 @@
         width: 24px;
         height: 24px;
         margin-left: 10px;
-        background-image: url(../icons/footer-send.svg);
+        background-image: url(../../icons/footer-send.svg);
         background-size: contain;
-
-        @media screen and (max-width: 479.98px) {
-            display: none;
-        }
     }
 }
