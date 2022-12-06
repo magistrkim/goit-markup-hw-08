@@ -5,6 +5,7 @@
         justify-content: flex-start;
         gap: 8px;
         margin-bottom: 50px;
+        row-gap: 15px;
     }
 
     @media screen and (min-width: 768px) {
@@ -15,7 +16,7 @@
     }
 }
 .filter-btn {
-    padding: 6px 22px;
+    padding: 6px 25px;
     font-family: inherit;
     font-weight: 500;
     font-size: var(--font-size-secondary);
